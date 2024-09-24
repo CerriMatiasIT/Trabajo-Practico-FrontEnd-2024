@@ -1,0 +1,8 @@
+
+WEBVTT
+
+00:00:01.000 --> 00:00:02.330
+Hola mundo
+
+00:00:03.000 --> 00:00:05.000
+Esto es un subtitulo de prueba

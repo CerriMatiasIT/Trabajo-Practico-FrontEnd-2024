@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <img src="img/brand-logo.png" alt="Logo">
-        <h1>Inicio</h1>
-        <h2>Subtitulo</h2>
-    </header>
     <nav>
         <ul>
             <li>Inicio</li>
@@ -19,16 +14,55 @@
             <li>Contacto</li>
         </ul>
     </nav>
+    <header>
+        <img src="img/brand-logo.png" alt="Logo">
+        <h1>Inicio</h1>
+        <h2>Subtitulo</h2>
+    </header>
     <main>
-            <video controls poster="img/brand-logo.png" width="50%" height="50%">
-                <source src="media/MC _FrontEnd.mp4" type="video/mp4">
-                <track src="media/subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
-            </video>
-        <p class="parrafo" id="fondo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</strong>
-        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</em>
-        <s>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</s>
-
+    <section class="productos" id="productos">
+        <h2>Productos</h2>
+        <div>
+            <img src="img/brand-logo.png" alt="Logo">
+            <h3>Producto 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div>
+            <img src="img/brand-logo.png" alt="Logo">
+            <h3>Producto 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div>
+            <img src="img/brand-logo.png" alt="Logo">
+            <h3>Producto 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+    </section>
+    <section class="reseñas" id="reseñas">
+        <h2>Reseñas</h2>
+        <div>
+            <h3>Reseña 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div>
+            <h3>Reseña 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div>
+            <h3>Reseña 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div>
+            <h3>Reseña 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div>
+            <h3>Reseña 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
         <form action="https://formspree.io/f/xpwagnbn" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -38,6 +72,8 @@
             <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+    </section>
+        
     </main>
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>

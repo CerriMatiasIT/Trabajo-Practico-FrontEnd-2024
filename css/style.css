@@ -1,15 +1,20 @@
-/* estilos en linea tienen prioridad sobre los internos y externos */
+/*Importacion de fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Protest Strike", sans-serif;
 }
 
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 16px;
 }
 main {
@@ -79,7 +84,7 @@ nav ul li a:active {
 /*Estilos para header*/
 header {
     color: white;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #047c34, #118b4b, #1f9a62, #2da979, #3cb890);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -100,4 +105,199 @@ footer {
     height: 50px;
     position: fixed;
     bottom: 0;
+}
+
+/*Estilos para productos*/
+/*#productos div{
+    background-color: #047c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}*/
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.productos-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Protest Strike", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#productos .card {
+    background-color: #047c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+#productos .card:hover {
+    transform: translateY(-5px);
+}
+
+#productos .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#productos .card h3 {
+    margin-bottom: 10px;
+}
+
+#productos .card p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    #productos .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #productos .card {
+        width: 100%;
+    }
+}
+
+
+/*Estilos para reseñas*/
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.reseña {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.reseña:hover {
+    transform: translateY(-5px);
+}
+
+.reseña-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reseña-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.reseña-autor {
+    font-weight: bold;
+}
+
+.reseña-contenido {
+    font-style: italic;
+}
+
+.reseña-rating {
+    color: #ffd700;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .reseñas-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    display: grid;
+    gap: 15px;
+}
+
+.contacto label {
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para responsividad */
+@media screen and (max-width: 768px) {
+    .contacto {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacto form {
+        gap: 10px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+        padding: 8px;
+    }
+
+    .contacto button {
+        padding: 8px 16px;
+    }
 }

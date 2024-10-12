@@ -113,18 +113,7 @@ footer {
 }
 
 /*Estilos para productos*/
-/*#productos div{
-    background-color: #047c34;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}*/
+
 #productos {
     display: flex;
     flex-wrap: wrap;

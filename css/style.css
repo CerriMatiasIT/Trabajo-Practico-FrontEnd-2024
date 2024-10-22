@@ -149,8 +149,8 @@ footer {
 }
 
 #productos .card img {
-    max-width: 100%;
-    height: auto;
+    height: 200px;
+    width: 200px;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -201,6 +201,17 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+.reseñas-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Protest Strike", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reseña-fecha {
+    margin-left: auto;
 }
 
 .reseña-avatar {

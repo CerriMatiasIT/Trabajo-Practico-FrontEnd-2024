@@ -297,6 +297,15 @@ footer {
 
 /* Media Queries para responsividad */
 @media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .contacto {
         max-width: 100%;
         padding: 15px;
@@ -304,6 +313,54 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #047c34, #118b4b, #1f9a62, #2da979, #3cb890);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        opacity: 0.9;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    header video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    footer {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
     .contacto form {
         gap: 10px;
     }
@@ -317,3 +374,4 @@ footer {
         padding: 8px 16px;
     }
 }
+

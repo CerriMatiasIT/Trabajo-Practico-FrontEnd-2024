@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Producto 1",
+        "precio": 10.99,
+        "descripcion": "Descripción del Producto 1.",
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 2,
+        "nombre": "Producto 2",
+        "precio": 15.49,
+        "descripcion": "Descripción del Producto 2.",
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 3,
+        "nombre": "Producto 3",
+        "precio": 7.99,
+        "descripcion": "Descripción del Producto 3.",
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 4,
+        "nombre": "Producto 4",
+        "precio": 20.00,
+        "descripcion": "Descripción del Producto 4.",
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id": 5,
+        "nombre": "Producto 5",
+        "precio": 5.49,
+        "descripcion": "Descripción del Producto 5.",
+        "imagen": "https://via.placeholder.com/150"
+    },
+    {
+        "id":6,
+        "nombre":"Producto 6",
+        "precio":12.99,
+        "descripcion":"Descripción del Producto 6.",
+        "imagen":"https://via.placeholder.com/150"
+    }
+]

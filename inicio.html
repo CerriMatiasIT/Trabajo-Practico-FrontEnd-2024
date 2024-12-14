@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./img/brand-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="ms-2">MC Producciones</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu de busqueda</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#header">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reviews.html">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <video src="video/video.mp4" autoplay muted loop></video>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">MC Producciones</h1>
+                    <p class="lead">Bienvenidos a nuestra pagina web</p>
+                    <button type="button" class="btn btn-outline-light btn-lg">Inscribete</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col"><i class="bi bi-arrow-down" style="font-size: 5rem;"></i></div>
+                <div class="col">
+                    <h2>Suscribete a nuestra lista de correo</h2>
+                    <p>Ingresa tu email aca*</p>
+                    <div class="input-group input-group-lg mb-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="button-addon2">Suscribirse</button>
+                    </div>
+                    <p>¡Gracias por tu mensaje!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="beneficios">
+            <div class="container">
+                <div class="row row-cols-2">
+                    <div class="col"><h2 class="display-2">¿Por que contratarnos?</h2></div>
+                    <div class="col"><i class="bi bi-bag-fill"  style="font-size: 5em;"></i>
+                        <h3>Titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora!</p></div>
+                    <div class="col"><i class="bi bi-book-half" style="font-size: 5em;"></i>
+                        <h3>Titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora!</p></div>
+                    <div class="col"><i class="bi bi-braces" style="font-size: 5em;"></i>
+                        <h3>Titulo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora!</p></div>
+                  </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="container">
+                <div class="row row-cols-2">
+                <div class="col">
+                    <h2 class="display-2">Acerca de MC Producciones</h2>
+                    <h3 class="display-3"><em> Creando oportunidades para un futuro mas brillante </em></h3>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias aliquam perspiciatis illo laudantium reprehenderit. Ducimus totam consequuntur repellat quibusdam! Sequi unde, numquam non minus totam quo repellat ex possimus corrupti tenetur temporibus debitis consequuntur necessitatibus repudiandae cumque? Explicabo, fuga omnis quod illo esse, hic quidem, nihil voluptatem similique suscipit autem atque. Sint nulla commodi, delectus quis accusantium, sapiente eos perspiciatis at dolore aperiam facilis minima ipsum maxime ratione et impedit sit iure nemo totam ad qui odit. Dolore sunt maiores quidem ipsum amet quod molestias ut nihil deleniti itaque commodi totam, adipisci cupiditate laborum, iure sapiente facilis, reprehenderit officiis.</p>
+                    <button class="btn btn-default btn-lg"></button>
+                </div>
+            </div></div>
+        </section>
+
+        <section class="servicios">
+            <div class="container" id="productos">
+                <div class="container text-center">
+                    <h2>Servicios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab similique sit alias! A, fuga aliquam. Hic aperiam sint, delectus ipsa fuga porro. Officia sapiente dignissimos fugiat, harum, cum aspernatur asperiores magnam a veritatis fuga error praesentium corporis dolor vitae cumque, nostrum tempora expedita. Sed provident facere a consectetur vero.</p>
+                </div>
+                <div class="row row-cols-3 text-center" id="productos-container">                      
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <footer class="navbar-dark bg-dark d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+        data-bs-theme="dark">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 MC Producciones, Inc</p>
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./img/brand-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <span class="ms-2">MC Producciones</span>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="#productos" class="nav-link px-2 text-body-secondary">Productos</a></li>
+            <li class="nav-item"><a href="#reseñas" class="nav-link px-2 text-body-secondary">Reseñas</a></li>
+            <li class="nav-item"><a href="#contactos" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+        </ul>
+    </footer>
+    <script src="scripts/mostrarProductos.js"></script>
+</body>
+
+</html>

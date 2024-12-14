@@ -106,8 +106,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 0;
 }
 
 .footer-content {
@@ -138,7 +136,7 @@ footer {
     margin-bottom: 20px;
 }
 
-#productos .card {
+#productos-container .card{
     background-color: #047c34;
     color: white;
     display: flex;
@@ -152,9 +150,10 @@ footer {
     transition: transform 0.3s ease;
 }
 
-#productos .card:hover {
+#productos-container .card:hover{
     transform: translateY(-5px);
 }
+
 
 #productos .card img {
     height: 200px;
@@ -250,10 +249,14 @@ footer {
 }
 
 /* Estilos para la sección de contacto */
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .contacto {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    margin: 0;
+    padding: 15px;
 }
 
 .contacto h2 {
@@ -278,8 +281,8 @@ footer {
     border-radius: 4px;
 }
 
-.contacto button {
-    background-color: #007bff;
+.contacto button, .header-button {
+    background-color: #198754;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -288,8 +291,11 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.contacto button:hover {
-    background-color: #0056b3;
+.contacto button:hover,.header-button:hover {
+    background-color: #74caa2;
+}
+#form-contact-img{
+    width: fit-content;
 }
 
 /* Media Queries para responsividad */
@@ -372,3 +378,194 @@ footer {
     }
 }
 
+.beneficios{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.sobre{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    color: #f5f5f5;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
+}
+.servicios{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-out-top {
+    animation: slide-out-top 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slide-out-top {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+.slide-in-bottom {
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.reviews-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+.review {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.review-meta {
+    flex-grow: 1;
+}
+.review-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.review-rating {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+.review-rating .star {
+    font-size: 20px;
+}
+.review-text {
+    color: #666;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    .review-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .review-avatar {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100vh;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.producto {
+    margin-bottom: 1rem;
+}
+
+.producto {
+    margin-bottom: 1rem;
+}
+
+
+.producto-detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.producto-detalle-imagen {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.producto-detalle-info {
+    width: 100%;
+    text-align: center;
+}
+
+.producto-detalle-titulo {
+    font-size: 2.5rem;
+    color: #047c34;
+    margin-bottom: 1rem;
+}
+
+.producto-detalle-precio {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.producto-detalle-descripcion {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .producto-detalle {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .producto-detalle-imagen {
+        flex: 1;
+    }
+    
+    .producto-detalle-info {
+        flex: 1;
+        text-align: left;
+        padding-left: 2rem;
+    }
+}

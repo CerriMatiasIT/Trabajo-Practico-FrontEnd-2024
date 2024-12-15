@@ -1,5 +1,3 @@
-// script.js
-
 // Array de productos
 const productos = [
     { id: 1, nombre: 'Producto 1', precio: 10.99, descripcion: 'Descripción del Producto 1.', imagen: 'https://via.placeholder.com/255' },

@@ -5,8 +5,12 @@ const productos = [
     { id: 3, nombre: 'Producto 3', precio: 7.99, descripcion: 'Descripción del Producto 3.', imagen: 'https://via.placeholder.com/255' },
     { id: 4, nombre: 'Producto 4', precio: 20.00, descripcion: 'Descripción del Producto 4.', imagen: 'https://via.placeholder.com/255' },
     { id: 5, nombre: 'Producto 5', precio: 5.49, descripcion: 'Descripción del Producto 5.', imagen: 'https://via.placeholder.com/255' },
-    { id: 6, nombre: 'Producto 6', precio: 12.99, descripcion: 'Descripción del Producto 6.',imagen: 'https://via.placeholder.com/255' }
+    { id: 6, nombre: 'Producto 6', precio: 12.99, descripcion: 'Descripción del Producto 6.', imagen: 'https://via.placeholder.com/255' }
 ];
+import CarritoCompras from './carrito.js';
+
+const carrito = new CarritoCompras();
+
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get('id');
 
@@ -19,11 +23,11 @@ function cargarHeader() {
         <h1>${producto.nombre}</h1>
         <p>Descripción: ${producto.descripcion}</p>
         `;
-        }
-        else {
-            header.innerHTML = '<p>Producto no encontrado.</p>';
-        }
-        }
+    }
+    else {
+        header.innerHTML = '<p>Producto no encontrado.</p>';
+    }
+}
 
 // Función para cargar los detalles del producto
 function cargarDetallesProducto(id) {
@@ -35,8 +39,31 @@ function cargarDetallesProducto(id) {
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <p>Precio: $${producto.precio.toFixed(2)}</p>
             <p>${producto.descripcion}</p>
-            <button class="btn btn-success">Añadir al carrito</button>
+            <button id="add-to-cart-${producto.id}" class="btn btn-success">Añadir al carrito</button>
         `;
+
+        // Enlazar evento de clic al botón
+        const addToCartButton = document.getElementById(`add-to-cart-${producto.id}`);
+        addToCartButton.addEventListener('click', () => {
+            // Agregar producto al carrito
+            carrito.agregarServicio({
+                id: producto.id,
+                nombre: producto.nombre,
+                precio: producto.precio,
+                descripcion: producto.descripcion
+            });
+
+            // Crear una notificación breve
+            const notification = document.createElement('div');
+            notification.className = 'notification success';
+            notification.textContent = `${producto.nombre} ha sido añadido al carrito.`;
+            document.body.appendChild(notification);
+
+            // Remover notificación después de 3 segundos
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, 3000);
+        });
     } else {
         detalleContainer.innerHTML = '<p>Producto no encontrado.</p>';
     }
@@ -67,7 +94,7 @@ function cargarReseñas(id) {
                 texto: "Muy buen producto, cumple con lo esperado."
             },
             {
-                nombre: "Usuario 2", 
+                nombre: "Usuario 2",
                 avatar: "https://via.placeholder.com/60",
                 rating: 5,
                 texto: "Excelente calidad y buen precio."
@@ -76,7 +103,7 @@ function cargarReseñas(id) {
 
         const reviewsContainer = document.createElement('div');
         reviewsContainer.className = 'reviews-container';
-        
+
         const reviewsTitle = document.createElement('h3');
         reviewsTitle.className = 'section-title';
         reviewsTitle.textContent = 'Reseñas de clientes';

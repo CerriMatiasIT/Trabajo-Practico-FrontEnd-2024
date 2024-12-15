@@ -20,15 +20,19 @@
                 <img src="./img/brand-logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                 <span class="ms-2">MC Producciones</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center">
+                <!-- Contador y botón del carrito -->
+                <span id="carrito-cantidad" class="badge bg-info text-dark me-3">0</span>
+                <button id="cart-button" class="btn btn-primary">Ver Carrito</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu de busqueda</h5>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú de búsqueda</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -51,6 +55,7 @@
             </div>
         </div>
     </nav>
+    
     <header id="header" class="header">
     </header>
 
@@ -74,7 +79,19 @@
             <li class="nav-item"><a href="#contactos" class="nav-link px-2 text-body-secondary">Contacto</a></li>
         </ul>
     </footer>
-
+    <!-- Modal Manual -->
+<div id="custom-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Carrito de Compras</h2>
+      <div id="modal-body">
+        <!-- Aquí irá el contenido dinámico del carrito -->
+      </div>
+      <button id="close-modal-button" class="btn btn-primary">Cerrar</button>
+    </div>
+  </div>
+  
     <script type="module" src="/scripts/detalle.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
 </body>
 </html>

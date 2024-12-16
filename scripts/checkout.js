@@ -11,7 +11,7 @@ import CarritoCompras from '/scripts/carrito.js';
         const items = carrito.obtenerCarrito();
         
         if (items.length === 0) {
-            cartItemsList.innerHTML = '<li>No hay items en el carrito. Visita nuestros <a href="products.html">productos</a></li>';
+            cartItemsList.innerHTML = '<li>No hay items en el carrito. Visita nuestros <a href="productos.html">productos</a></li>';
             return;
         }
 

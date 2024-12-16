@@ -2,6 +2,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media screen and (max-width: 480px) {
+    header {
+      /* Adjust font sizes and element spacing as needed */
+      font-size: 16px;
+      padding: 20px;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .video-container {
+        position: relative;
+        width: 100%;
+      }
+      
+     header video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .input-group {
+        flex-direction: column; /* Stack input and button vertically */
+      }
+    
+      .input-group .form-control {
+        width: 100%;
+      }
+      footer {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    .contacto form {
+        gap: 10px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+        padding: 8px;
+    }
+
+    .contacto button {
+        padding: 8px 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+        max-width: 100%;
+    }
+    .contacto {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+}
 
 * {
     margin: 0;
@@ -42,7 +112,7 @@ nav {
     color: white;
     background-color: black;
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -57,45 +127,22 @@ nav {
     border-radius: 0 0 10px 10px;
     overflow: hidden;
     opacity: 0.9;
-
+}
+nav div{
+    padding: 0,5px;
+    margin-left: 5px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-
-}
-
-nav ul li a:hover {
-    color: #ccc;
-}
-
-nav ul li a:active {
-    color: #ccc;
-}
 
 header {
     color: white;
-    background-image: linear-gradient(to bottom, #047c34, #118b4b, #1f9a62, #2da979, #3cb890);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-image: linear-gradient(to bottom, #047c34, #118b4b, #1f9a62, #2da979, #3cb890);
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer {
@@ -170,64 +217,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.reseñas-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.reseña {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.reseña:hover {
-    transform: translateY(-5px);
-}
-
-.reseña-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.reseñas-title {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Protest Strike", sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.reseña-fecha {
-    margin-left: auto;
-}
-
-.reseña-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.reseña-autor {
-    font-weight: bold;
-}
-
-.reseña-contenido {
-    font-style: italic;
-}
-
-.reseña-rating {
-    color: #ffd700;
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
 legend {
     font-size: 1.5rem;
     font-weight: bold;
@@ -282,7 +271,8 @@ legend {
 }
 
 .beneficios {
-    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -294,7 +284,6 @@ legend {
     justify-content: center;
     color: #f5f5f5;
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    ;
 }
 
 .servicios {
@@ -625,4 +614,3 @@ legend {
     list-style: none;
     padding: 0;
 }
-

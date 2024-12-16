@@ -33,21 +33,3 @@ function mostrarModal() {
   // Mostrar el modal
   modal.style.display = 'flex';
 }
-
-// Ocultar modal
-function ocultarModal() {
-  modal.style.display = 'none';
-}
-
-// Función para eliminar un producto del carrito
-function eliminarProducto(index) {
-  carrito.eliminarProducto(index); // Llamada al método de eliminar del carrito
-  mostrarModal(); // Volver a mostrar el modal con el carrito actualizado
-}
-
-// Event listeners para cerrar el modal
-//closeModalButton.addEventListener('click', ocultarModal);
-//closeModalIcon.addEventListener('click', ocultarModal);
-
-// Mostrar el modal cuando el usuario haga clic en el botón del carrito
-//document.getElementById('cart-button').addEventListener('click', mostrarModal);

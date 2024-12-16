@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
+
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
@@ -24,8 +26,9 @@
                 <!-- Contador y botón del carrito -->
                 <span id="carrito-cantidad" class="badge bg-info text-dark me-3">0</span>
                 <a id="cart-button" href="checkout.html" class="btn btn-success">Ver Carrito</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -55,12 +58,12 @@
             </div>
         </div>
     </nav>
-    
+
     <header id="header" class="header">
     </header>
 
     <main class="producto" id="producto-detalle">
-        
+
     </main>
 
     <footer class="navbar-dark bg-dark d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
@@ -80,18 +83,19 @@
         </ul>
     </footer>
     <!-- Modal Manual -->
-<div id="custom-modal" class="modal-overlay">
-    <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <h2>Carrito de Compras</h2>
-      <div id="modal-body">
-        <!-- Aquí irá el contenido dinámico del carrito -->
-      </div>
-      <button id="close-modal-button" class="btn btn-primary">Cerrar</button>
+    <div id="custom-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="modal-body">
+                <!-- Aquí irá el contenido dinámico del carrito -->
+            </div>
+            <button id="close-modal-button" class="btn btn-primary">Cerrar</button>
+        </div>
     </div>
-  </div>
-  
+
     <script type="module" src="/scripts/detalle.js"></script>
     <script type="module" src="scripts/modal.js"></script>
 </body>
+
 </html>

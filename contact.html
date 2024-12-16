@@ -25,8 +25,9 @@
                 <!-- Contador y botón del carrito -->
                 <span id="carrito-cantidad" class="badge bg-info text-dark me-3">0</span>
                 <a id="cart-button" href="checkout.html" class="btn btn-success">Ver Carrito</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" 
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -56,13 +57,13 @@
             </div>
         </div>
     </nav>
-    
+
     <header id="header">
         <h1>Contáctanos</h1>
         <h2>Completa el formulario de contacto y nosotros te responderemos a la brevedad</h2>
         <button onclick="iniciarAnimaciones()" class="header-button">Comenzar</button>
     </header>
-    
+
     <main class="container">
         <section class="contacto" id="contacto">
             <div class="row justify-content-evenly">
@@ -107,36 +108,36 @@
     </footer>
     <div id="custom-modal" class="modal-overlay">
         <div class="modal-content">
-          <span class="modal-close">&times;</span>
-          <h2>Carrito de Compras</h2>
-          <div id="modal-body">
-            
-          </div>
-          <button id="close-modal-button" class="btn btn-primary">Cerrar</button>
+            <span class="modal-close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="modal-body">
+
+            </div>
+            <button id="close-modal-button" class="btn btn-primary">Cerrar</button>
         </div>
-      </div>
+    </div>
     <script>
         function iniciarAnimaciones() {
-    const header = document.getElementById('header');
-    const contacto = document.getElementById('contacto');
+            const header = document.getElementById('header');
+            const contacto = document.getElementById('contacto');
 
-    // Agregar la animación al header
-    header.classList.add('slide-out-top');
+            // Agregar la animación al header
+            header.classList.add('slide-out-top');
 
-    // Cuando termine la animación del header, iniciar la animación del contacto
-    header.addEventListener('animationend', () => {
-        header.style.display = 'none'; // Ocultar el header
-        contacto.classList.add('slide-in-bottom'); // Mostrar el contacto con animación
-    }, { once: true }); // Aseguramos que este evento solo se ejecute una vez
-}
+            // Cuando termine la animación del header, iniciar la animación del contacto
+            header.addEventListener('animationend', () => {
+                header.style.display = 'none'; // Ocultar el header
+                contacto.classList.add('slide-in-bottom'); // Mostrar el contacto con animación
+            }, { once: true }); // Aseguramos que este evento solo se ejecute una vez
+        }
 
-history.scrollRestoration = "manual";
-  window.onload = function() {
-    window.scrollTo(0, 0);
-  };
+        history.scrollRestoration = "manual";
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
     </script>
 
-    
+
     <script type="module" src="scripts/modal.js"></script>
 </body>
 

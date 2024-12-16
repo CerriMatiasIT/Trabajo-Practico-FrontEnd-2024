@@ -585,7 +585,7 @@ legend{
   
   /* Fondo del modal */
 .modal-overlay {
-    display: none; /* Ocultamos el modal por defecto */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -679,5 +679,37 @@ legend{
       transform: translateY(20px);
     }
   }
-  
-  
+  .carrito{
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #buy-button{
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 5px;
+        border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        border-bottom: 1px solid #dee2e6;
+        text-align: left;
+    }
+
+    .table thead th {
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    #cart-items {
+        list-style: none;
+        padding: 0;
+    }

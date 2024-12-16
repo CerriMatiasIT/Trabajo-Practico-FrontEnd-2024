@@ -5,11 +5,9 @@ const closeModalIcon = document.querySelector('.modal-close');
 const modalBody = document.getElementById('modal-body');
 
 // Instancia del carrito
-
 import CarritoCompras from './carrito.js';
 
 const carrito = new CarritoCompras();
-
 
 // Mostrar modal
 function mostrarModal() {
@@ -20,12 +18,13 @@ function mostrarModal() {
   } else {
     modalBody.innerHTML = carritoItems
       .map(
-        (item) =>
-          `<div>
+        (item, index) => `
+          <div>
             <h4>${item.nombre}</h4>
             <p>${item.descripcion}</p>
             <p>Precio: $${item.precio.toFixed(2)}</p>
             <p>Cantidad: ${item.cantidad}</p>
+            <button class="btn btn-danger" onclick="eliminarProducto(${index})">Eliminar</button>
           </div><hr>`
       )
       .join('');
@@ -40,9 +39,15 @@ function ocultarModal() {
   modal.style.display = 'none';
 }
 
-// Eventos de cierre
-closeModalButton.addEventListener('click', ocultarModal);
-closeModalIcon.addEventListener('click', ocultarModal);
+// Función para eliminar un producto del carrito
+function eliminarProducto(index) {
+  carrito.eliminarProducto(index); // Llamada al método de eliminar del carrito
+  mostrarModal(); // Volver a mostrar el modal con el carrito actualizado
+}
 
-// Ejemplo: Abre el modal manualmente desde un botón
-document.getElementById('cart-button').addEventListener('click', mostrarModal);
+// Event listeners para cerrar el modal
+//closeModalButton.addEventListener('click', ocultarModal);
+//closeModalIcon.addEventListener('click', ocultarModal);
+
+// Mostrar el modal cuando el usuario haga clic en el botón del carrito
+//document.getElementById('cart-button').addEventListener('click', mostrarModal);

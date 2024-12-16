@@ -89,13 +89,13 @@ function cargarReseñas(id) {
         const reseñas = [
             {
                 nombre: "Usuario 1",
-                avatar: "https://via.placeholder.com/60",
+                avatar: "https://randomuser.me/api/portraits/lego/1.jpg",
                 rating: 4,
                 texto: "Muy buen producto, cumple con lo esperado."
             },
             {
                 nombre: "Usuario 2",
-                avatar: "https://via.placeholder.com/60",
+                avatar: "https://randomuser.me/api/portraits/lego/2.jpg",
                 rating: 5,
                 texto: "Excelente calidad y buen precio."
             }

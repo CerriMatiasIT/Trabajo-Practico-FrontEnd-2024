@@ -87,26 +87,5 @@ class CarritoCompras {
     }
 }
 
-// Exportar la clase para poder utilizarla en otros archivos
 export default CarritoCompras;
 
-// Ejemplo de uso:
-/*
-const carrito = new CarritoCompras();
-
-// Agregar un servicio
-carrito.agregarServicio({
-    id: 1,
-    nombre: "Servicio de Consultoría",
-    precio: 99.99
-});
-
-// Eliminar un servicio
-carrito.eliminarServicio(1);
-
-// Actualizar cantidad
-carrito.actualizarCantidad(1, 2);
-
-// Obtener contenido del carrito
-console.log(carrito.obtenerCarrito());
-*/

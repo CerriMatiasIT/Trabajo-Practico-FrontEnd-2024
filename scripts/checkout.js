@@ -1,4 +1,4 @@
-import CarritoCompras from 'scripts/carrito.js';
+import CarritoCompras from '../scripts/carrito.js';
 
     // Inicializar el carrito
     const carrito = new CarritoCompras();
